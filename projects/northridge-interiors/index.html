@@ -4,311 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>North Ridge Interiors Inc. | Drywall, Insulation, Poly &amp; Taping</title>
-<meta name="description" content="North Ridge Interiors Inc. — hardworking drywall professionals. Insulation, vapour barrier (poly), drywall hanging, taping and finishing. 5-star rated. Get a free quote.">
+<meta name="description" content="North Ridge Interiors Inc. — hardworking drywall professionals. Insulation, vapour barrier (poly), drywall hanging, taping and finishing. 5-star rated. Free quotes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Ccircle r='50' fill='%23111111'/%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='6'%3E%3Ccircle r='42'/%3E%3Cpath d='M-23 21V-18.5L23.5 19.5V-19'/%3E%3Cpath d='M-6.5 25.5V-25.5H2a6 6 0 0 1 6 6V-6'/%3E%3Cpath d='M-6.5 10.5H1L7.5 25.5'/%3E%3C/g%3E%3C/svg%3E">
-<style>
-  :root {
-    --navy: #111111;
-    --navy-2: #1E1E1E;
-    --orange: #E6E6E6;
-    --orange-dark: #4A4A4A;
-    --bg: #F4F4F4;
-    --card: #FFFFFF;
-    --text: #161616;
-    --muted: #5C5C5C;
-    --border: #DDDDDD;
-    --white: #FFFFFF;
-    --radius: 10px;
-    --max: 1160px;
-  }
-  *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-  body {
-    margin: 0; background: var(--bg); color: var(--text);
-    font-family: "Barlow", system-ui, -apple-system, Segoe UI, sans-serif;
-    font-size: 17px; line-height: 1.6;
-  }
-  h1, h2, h3, .display {
-    font-family: "Barlow Condensed", "Barlow", sans-serif;
-    line-height: 1.05; margin: 0; letter-spacing: .01em; text-transform: uppercase;
-  }
-  p { margin: 0; }
-  a { color: inherit; }
-  img, svg { display: block; }
-  [hidden] { display: none !important; }
-  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
-  .eyebrow {
-    display: inline-flex; align-items: center; gap: 8px;
-    font-weight: 600; font-size: 14px; letter-spacing: .12em; text-transform: uppercase;
-    color: var(--orange-dark);
-  }
-  .eyebrow::before { content: ""; width: 24px; height: 3px; background: currentColor; }
-  :focus-visible { outline: 3px solid #8A8A8A; outline-offset: 3px; border-radius: 4px; }
-
-  /* Buttons */
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-    padding: 14px 26px; border-radius: 8px; border: 2px solid transparent;
-    font: 600 16px/1 "Barlow", sans-serif; text-decoration: none; cursor: pointer;
-    transition: background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
-    min-height: 48px;
-  }
-  .btn-primary { background: var(--orange); color: var(--navy); }
-  .btn-primary:hover { background: var(--white); color: var(--navy); }
-  .btn-ghost { border-color: rgba(255,255,255,.5); color: var(--white); }
-  .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
-  .btn svg { width: 18px; height: 18px; }
-
-  /* Top bar + Nav */
-  .topbar { background: var(--navy); color: #C8C8C8; font-size: 14px; }
-  .topbar .wrap { display: flex; justify-content: space-between; gap: 16px; padding-top: 8px; padding-bottom: 8px; flex-wrap: wrap; }
-  .topbar a { text-decoration: none; color: var(--white); font-weight: 600; }
-  .stars-inline { color: var(--orange); letter-spacing: 2px; }
-
-  header.nav {
-    position: sticky; top: 0; z-index: 50; background: var(--white);
-    border-bottom: 1px solid var(--border);
-  }
-  header.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
-  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .logo-mark { width: 46px; height: 46px; flex: none; }
-  .logo-fallback { display: flex; align-items: center; gap: 12px; color: var(--navy); }
-  footer .logo-fallback { color: var(--white); }
-  .logo-text { font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; line-height: 1; color: var(--navy); }
-  .logo-text small { display: block; font-size: 12px; letter-spacing: .22em; color: #6B6B6B; font-weight: 700; }
-  nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; align-items: center; }
-  nav a.link { text-decoration: none; font-weight: 600; color: var(--navy); padding: 8px 0; border-bottom: 2px solid transparent; transition: border-color .18s; }
-  nav a.link:hover { border-color: var(--navy); }
-  .menu-btn { display: none; background: none; border: 0; padding: 10px; cursor: pointer; color: var(--navy); }
-  .menu-btn svg { width: 28px; height: 28px; }
-
-  /* Hero */
-  .hero {
-    position: relative; color: var(--white); overflow: hidden;
-    background:
-      linear-gradient(100deg, rgba(17,17,17,.97) 0%, rgba(17,17,17,.9) 45%, rgba(17,17,17,.6) 100%),
-      repeating-linear-gradient(90deg, #2A2A2A 0 2px, transparent 2px 120px),
-      repeating-linear-gradient(0deg, #2A2A2A 0 2px, transparent 2px 80px),
-      var(--navy-2);
-  }
-  .hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; padding-top: 88px; padding-bottom: 96px; }
-  .hero h1 { font-size: clamp(44px, 7vw, 84px); font-weight: 800; }
-  .hero h1 span { color: var(--orange); }
-  .hero p.lead { font-size: 20px; color: #D6D6D6; margin-top: 20px; max-width: 560px; }
-  .hero .ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
-  .rating { display: flex; align-items: center; gap: 14px; margin-top: 36px; }
-  .rating .stars { display: flex; gap: 3px; }
-  .rating .stars svg { width: 22px; height: 22px; fill: var(--orange); }
-  .rating p { font-size: 15px; color: #C8C8C8; }
-  .rating strong { color: var(--white); }
-
-  .hero-card {
-    background: var(--white); color: var(--text); border-radius: var(--radius);
-    padding: 28px; border-top: 6px solid #8A8A8A;
-  }
-  .hero-card h2 { font-size: 30px; color: var(--navy); }
-  .hero-card p { color: var(--muted); margin: 6px 0 18px; font-size: 15px; }
-  .checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
-  .checklist li { display: flex; gap: 12px; align-items: flex-start; font-weight: 500; }
-  .checklist svg { flex: none; width: 22px; height: 22px; color: var(--orange-dark); margin-top: 2px; }
-  .hero-card .btn { width: 100%; margin-top: 22px; background: var(--navy); color: var(--white); }
-  .hero-card .btn:hover, form.quote .btn-primary:hover, header.nav .btn-primary:hover { background: #333; color: var(--white); }
-  form.quote .btn-primary, header.nav .btn-primary { background: var(--navy); color: var(--white); }
-
-  /* Stats strip */
-  .stats { background: var(--orange); color: var(--navy); }
-  .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding-top: 28px; padding-bottom: 28px; }
-  .stat { text-align: center; }
-  .stat .display { font-size: 38px; font-weight: 800; }
-  .stat p { font-weight: 600; font-size: 15px; }
-
-  /* Sections */
-  section.block { padding: 96px 0; }
-  .section-head { max-width: 680px; margin-bottom: 48px; }
-  .section-head h2 { font-size: clamp(36px, 5vw, 54px); color: var(--navy); margin-top: 10px; }
-  .section-head p { color: var(--muted); margin-top: 14px; font-size: 18px; }
-
-  .services { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-  .service {
-    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-    padding: 28px 24px; display: flex; flex-direction: column; gap: 12px;
-    transition: border-color .18s ease, transform .18s ease;
-  }
-  .service:hover { border-color: var(--navy); transform: translateY(-3px); }
-  .service .icon { width: 56px; height: 56px; border-radius: 10px; background: var(--navy); display: grid; place-items: center; }
-  .service .icon svg { width: 30px; height: 30px; color: var(--orange); }
-  .service h3 { font-size: 26px; color: var(--navy); margin-top: 6px; }
-  .service p { color: var(--muted); font-size: 16px; }
-  .service ul { margin: 4px 0 0; padding-left: 18px; color: var(--text); font-size: 15px; }
-  .service ul li { margin: 3px 0; }
-
-  /* Process */
-  .process-bg { background: var(--navy); color: var(--white); }
-  .process-bg .section-head h2 { color: var(--white); }
-  .process-bg .section-head p { color: #C8C8C8; }
-  .process-bg .eyebrow { color: var(--orange); }
-  .steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; counter-reset: step; }
-  .step { border-top: 3px solid var(--orange); padding-top: 18px; }
-  .step .num { font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 44px; color: var(--orange); line-height: 1; }
-  .step h3 { font-size: 22px; margin: 8px 0 8px; }
-  .step p { color: #C8C8C8; font-size: 15px; }
-
-  /* Why */
-  .why { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-  .why-visual {
-    aspect-ratio: 4/3.4; border-radius: var(--radius); background: var(--navy);
-    position: relative; overflow: hidden;
-  }
-  .why-visual svg { width: 100%; height: 100%; }
-  .badge-5 {
-    position: absolute; right: 20px; bottom: 20px; background: var(--white); border-radius: var(--radius);
-    padding: 16px 20px; text-align: center; border-bottom: 5px solid var(--navy);
-  }
-  .badge-5 .display { font-size: 44px; color: var(--navy); font-weight: 800; }
-  .badge-5 .stars svg { width: 16px; height: 16px; fill: var(--navy); }
-  .badge-5 .stars { display: flex; gap: 2px; justify-content: center; margin: 4px 0; }
-  .badge-5 p { font-size: 13px; font-weight: 600; color: var(--muted); }
-  .values { display: grid; gap: 22px; margin-top: 28px; }
-  .value { display: flex; gap: 16px; }
-  .value .icon { flex: none; width: 46px; height: 46px; border-radius: 50%; background: #E8E8E8; display: grid; place-items: center; }
-  .value .icon svg { width: 22px; height: 22px; color: var(--orange-dark); }
-  .value h3 { font-size: 22px; color: var(--navy); }
-  .value p { color: var(--muted); font-size: 16px; margin-top: 2px; }
-
-  /* FAQ */
-  .faq { max-width: 820px; }
-  details {
-    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
-    margin-bottom: 12px; overflow: hidden;
-  }
-  summary {
-    cursor: pointer; padding: 20px 24px; font-weight: 600; font-size: 18px; color: var(--navy);
-    list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px;
-  }
-  summary::-webkit-details-marker { display: none; }
-  summary::after { content: "+"; font-size: 28px; color: var(--navy); line-height: 1; transition: transform .18s; }
-  details[open] summary::after { transform: rotate(45deg); }
-  details .answer { padding: 0 24px 22px; color: var(--muted); }
-
-  /* Quote / Contact */
-  .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 48px; }
-  .contact-info { background: var(--navy); color: var(--white); border-radius: var(--radius); padding: 40px; }
-  .contact-info h2 { font-size: 44px; }
-  .contact-info > p { color: #C8C8C8; margin-top: 14px; }
-  .contact-list { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 20px; }
-  .contact-list li { display: flex; gap: 14px; align-items: flex-start; }
-  .contact-list svg { width: 24px; height: 24px; color: var(--orange); flex: none; margin-top: 2px; }
-  .contact-list span { display: block; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: #9A9A9A; }
-  .contact-list a, .contact-list strong { color: var(--white); text-decoration: none; font-weight: 600; font-size: 18px; }
-  .contact-list a:hover { text-decoration: underline; }
-
-  form.quote { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px; }
-  form.quote h3 { font-size: 30px; color: var(--navy); margin-bottom: 20px; }
-  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
-  .field label, fieldset legend { font-weight: 600; font-size: 15px; color: var(--navy); }
-  .req { color: #5C5C5C; }
-  input, select, textarea {
-    font: inherit; font-size: 16px; padding: 12px 14px; border: 1.5px solid #C4C4C4; border-radius: 8px;
-    background: var(--white); color: var(--text); min-height: 48px; width: 100%;
-    transition: border-color .15s;
-  }
-  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(17,17,17,.18); }
-  textarea { min-height: 120px; resize: vertical; }
-  .field.invalid input, .field.invalid select, .field.invalid textarea { border-color: #C2410C; }
-  .error { color: #B91C1C; font-size: 14px; min-height: 0; display: none; }
-  .field.invalid .error { display: block; }
-  fieldset { border: 0; padding: 0; margin: 0 0 16px; }
-  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
-  .chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
-  .chip span {
-    display: inline-flex; align-items: center; padding: 10px 16px; border-radius: 999px; border: 1.5px solid #C4C4C4;
-    cursor: pointer; font-weight: 500; font-size: 15px; transition: all .15s; min-height: 44px; user-select: none;
-  }
-  .chip input:checked + span { background: var(--navy); color: var(--white); border-color: var(--navy); }
-  .chip input:focus-visible + span { outline: 3px solid #8A8A8A; outline-offset: 2px; }
-  form.quote .btn { width: 100%; margin-top: 4px; }
-  .form-note { font-size: 13px; color: var(--muted); margin-top: 12px; text-align: center; }
-  .success {
-    display: none; text-align: center; padding: 40px 10px;
-  }
-  .success svg { width: 64px; height: 64px; color: #15803D; margin: 0 auto 16px; }
-  .success h3 { margin-bottom: 10px; }
-  .success p { color: var(--muted); }
-  form.quote.sent .form-body { display: none; }
-  form.quote.sent .success { display: block; }
-
-  /* CTA band */
-  .cta-band { background: var(--orange); }
-  .cta-band .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 48px; padding-bottom: 48px; flex-wrap: wrap; }
-  .cta-band h2 { font-size: clamp(30px, 4vw, 44px); color: var(--navy); }
-  .cta-band .btn { background: var(--navy); color: var(--white); }
-  .cta-band .btn:hover { background: #000000; }
-
-  footer { background: #0A0A0A; color: #9A9A9A; font-size: 15px; }
-  footer .wrap { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; padding-top: 56px; padding-bottom: 32px; }
-  footer h4 { color: var(--white); font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; font-size: 20px; margin: 0 0 14px; }
-  footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-  footer a { text-decoration: none; color: #C8C8C8; }
-  footer a:hover { color: var(--white); text-decoration: underline; }
-  footer .logo-text { color: var(--white); }
-  footer .logo-text small { color: #9A9A9A; }
-  footer .bottom { border-top: 1px solid #2A2A2A; }
-  footer .bottom .wrap { display: flex; justify-content: space-between; padding-top: 18px; padding-bottom: 18px; grid-template-columns: none; flex-wrap: wrap; gap: 8px; font-size: 14px; }
-
-  /* Mobile call bar */
-  .mobile-call { display: none; }
-
-  /* Reveal */
-  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
-  .reveal.in { opacity: 1; transform: none; }
-
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .reveal { opacity: 1; transform: none; transition: none; }
-    .service, .btn { transition: none; }
-  }
-
-  @media (max-width: 1024px) {
-    .services { grid-template-columns: repeat(2, 1fr); }
-    .steps { grid-template-columns: repeat(3, 1fr); row-gap: 32px; }
-  }
-  @media (max-width: 860px) {
-    .hero .wrap, .why, .contact-grid { grid-template-columns: 1fr; }
-    .hero .wrap { padding-top: 56px; padding-bottom: 64px; gap: 36px; }
-    .stats .wrap { grid-template-columns: repeat(2, 1fr); }
-    footer .wrap { grid-template-columns: 1fr; }
-    .menu-btn { display: block; }
-    nav ul {
-      position: absolute; top: 72px; left: 0; right: 0; background: var(--white);
-      flex-direction: column; align-items: stretch; gap: 0; padding: 8px 16px 20px;
-      border-bottom: 1px solid var(--border); display: none;
-    }
-    nav ul.open { display: flex; }
-    nav a.link { display: block; padding: 14px 4px; border-bottom: 1px solid var(--border); }
-    nav li .btn { width: 100%; margin-top: 14px; }
-    section.block { padding: 72px 0; }
-  }
-  @media (max-width: 600px) {
-    .wrap { padding: 0 16px; }
-    .services, .steps, .row { grid-template-columns: 1fr; }
-    .topbar .hide-sm { display: none; }
-    .contact-info, form.quote { padding: 26px 20px; }
-    .mobile-call {
-      display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
-      background: var(--navy); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); gap: 10px;
-    }
-    .mobile-call .btn { flex: 1; padding: 12px; }
-    body { padding-bottom: 70px; }
-  }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- SVG icon sprite (Lucide-style strokes) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-logo" viewBox="-50 -50 100 100"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="miter"><circle cx="0" cy="0" r="45"/><path d="M-23 21V-18.5L23.5 19.5V-19" stroke-linecap="square"/><path d="M-6.5 25.5V-25.5H2a6 6 0 0 1 6 6V-6"/><path d="M-6.5 10.5H1L7.5 25.5"/></g></symbol>
@@ -339,7 +43,7 @@
 
 <header class="nav">
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="North Ridge Interiors Inc. home">
+    <a href="index.html" class="logo" aria-label="North Ridge Interiors Inc. home">
       <span class="logo-fallback"><svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="logo-text">North Ridge<small>Interiors Inc.</small></span></span>
     </a>
     <nav aria-label="Main">
@@ -347,11 +51,11 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
       <ul id="nav-list">
-        <li><a class="link" href="#services">Services</a></li>
-        <li><a class="link" href="#process">Our Process</a></li>
-        <li><a class="link" href="#why">Why Us</a></li>
-        <li><a class="link" href="#faq">FAQ</a></li>
-        <li><a class="btn btn-primary" href="#quote">Free Quote</a></li>
+        <li><a class="link" href="index.html" aria-current="page">Home</a></li>
+        <li><a class="link" href="services.html">Services</a></li>
+        <li><a class="link" href="about.html">About</a></li>
+        <li><a class="link" href="faq.html">FAQ</a></li>
+        <li><a class="btn btn-primary" href="contact.html">Free Quote</a></li>
       </ul>
     </nav>
   </div>
@@ -365,8 +69,8 @@
         <h1 style="margin-top:14px">Walls done <span>right.</span><br>The first time.</h1>
         <p class="lead">North Ridge Interiors Inc. is a crew of hardworking professionals who take your project from bare studs to smooth, paint-ready walls — insulation, vapour barrier, board and finish, all under one roof.</p>
         <div class="ctas">
-          <a href="#quote" class="btn btn-primary">Get a Free Quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a href="#services" class="btn btn-ghost">See Our Services</a>
+          <a href="contact.html" class="btn btn-primary">Get a Free Quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a href="services.html" class="btn btn-ghost">See Our Services</a>
         </div>
         <div class="rating">
           <div class="stars" aria-hidden="true">
@@ -385,7 +89,7 @@
           <li><svg aria-hidden="true"><use href="#i-check"/></svg>Taping, mudding &amp; sanding to paint-ready</li>
           <li><svg aria-hidden="true"><use href="#i-check"/></svg>Clean job site, every day</li>
         </ul>
-        <a href="#quote" class="btn btn-primary">Book an Estimate</a>
+        <a href="contact.html" class="btn btn-primary">Book an Estimate</a>
       </aside>
     </div>
   </section>
@@ -411,44 +115,24 @@
           <div class="icon"><svg aria-hidden="true"><use href="#i-insulation"/></svg></div>
           <h3>Insulation</h3>
           <p>Lower heating bills and a quieter, more comfortable home.</p>
-          <ul><li>Exterior walls &amp; ceilings</li><li>Basements &amp; rim joists</li><li>Sound-dampening interior walls</li></ul>
         </article>
         <article class="service reveal">
           <div class="icon"><svg aria-hidden="true"><use href="#i-poly"/></svg></div>
           <h3>Poly / Vapour Barrier</h3>
           <p>Properly lapped, sealed and taped to keep moisture where it belongs.</p>
-          <ul><li>6-mil poly installation</li><li>Acoustic sealant at seams</li><li>Electrical box &amp; penetration sealing</li></ul>
         </article>
         <article class="service reveal">
           <div class="icon"><svg aria-hidden="true"><use href="#i-board"/></svg></div>
           <h3>Drywall Hanging</h3>
           <p>Straight, tight boarding that sets you up for a flawless finish.</p>
-          <ul><li>Walls, ceilings &amp; bulkheads</li><li>Moisture &amp; fire-rated board</li><li>Patches &amp; repairs</li></ul>
         </article>
         <article class="service reveal">
           <div class="icon"><svg aria-hidden="true"><use href="#i-trowel"/></svg></div>
           <h3>Taping &amp; Finishing</h3>
           <p>Smooth seams, crisp corners and paint-ready surfaces.</p>
-          <ul><li>Tape, mud &amp; sand</li><li>Corner bead &amp; arches</li><li>Level 4 &amp; 5 finishes</li></ul>
         </article>
       </div>
-    </div>
-  </section>
-
-  <section class="block process-bg" id="process">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">How it works</span>
-        <h2>From Studs to Smooth</h2>
-        <p>A simple, honest process — you always know what's happening and when.</p>
-      </div>
-      <ol class="steps" style="list-style:none;padding:0;margin:0">
-        <li class="step reveal"><div class="num">01</div><h3>Free Estimate</h3><p>We visit, measure and give you a clear written quote.</p></li>
-        <li class="step reveal"><div class="num">02</div><h3>Insulate</h3><p>Walls and ceilings packed tight with no gaps or compression.</p></li>
-        <li class="step reveal"><div class="num">03</div><h3>Poly</h3><p>Vapour barrier installed, sealed and ready for inspection.</p></li>
-        <li class="step reveal"><div class="num">04</div><h3>Board</h3><p>Drywall hung straight and fastened to spec.</p></li>
-        <li class="step reveal"><div class="num">05</div><h3>Tape &amp; Finish</h3><p>Taped, mudded, sanded — handed back paint-ready and clean.</p></li>
-      </ol>
+      <a class="more-link" href="services.html">See full service details <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </section>
 
@@ -495,91 +179,15 @@
           <div class="value"><div class="icon"><svg aria-hidden="true"><use href="#i-shield"/></svg></div><div><h3>Quality You Can See</h3><p>Straight lines, smooth seams — work that passes inspection and the flashlight test.</p></div></div>
           <div class="value"><div class="icon"><svg aria-hidden="true"><use href="#i-broom"/></svg></div><div><h3>Respect for Your Home</h3><p>Floors protected, dust controlled, site cleaned up every day.</p></div></div>
         </div>
+        <a class="more-link" href="about.html">More about us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
-    </div>
-  </section>
-
-  <section class="block" id="faq" style="padding-top:24px">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Questions</span>
-        <h2>Frequently Asked</h2>
-      </div>
-      <div class="faq">
-        <details><summary>Do you do small jobs and repairs?</summary><div class="answer">Yes. From a single patch or a basement room to a full house, we're happy to quote it.</div></details>
-        <details><summary>Can you handle insulation, poly, board and taping all together?</summary><div class="answer">That's our specialty. One crew handles every stage, so there's no waiting between trades and no finger-pointing.</div></details>
-        <details><summary>Do you work with builders and general contractors?</summary><div class="answer">Absolutely. We work directly with homeowners as well as builders, renovators and general contractors.</div></details>
-        <details><summary>How long does a typical basement take?</summary><div class="answer">It depends on size and drying time for the mud, but most basements go from insulation to paint-ready in a matter of days to a couple of weeks. We'll give you a clear timeline with your quote.</div></details>
-        <details><summary>Are estimates really free?</summary><div class="answer">Yes — free and no obligation. Send us the details below and we'll get back to you quickly.</div></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="quote" style="padding-top:24px">
-    <div class="wrap contact-grid">
-      <div class="contact-info reveal">
-        <span class="eyebrow" style="color:var(--orange)">Get in touch</span>
-        <h2 style="margin-top:10px">Get Your Free Quote</h2>
-        <p>Tell us about your project and we'll get back to you with a clear, honest estimate.</p>
-        <ul class="contact-list">
-          <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><span>Call or text</span><a href="tel:" data-phone-link data-phone>Add your phone number</a></div></li>
-          <li><svg aria-hidden="true"><use href="#i-mail"/></svg><div><span>Email</span><a href="mailto:" data-email-link data-email>Add your email</a></div></li>
-          <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><span>Service area</span><strong data-area>Your local area &amp; surrounding communities</strong></div></li>
-          <li><svg aria-hidden="true"><use href="#i-clock"/></svg><div><span>Hours</span><strong data-hours>Mon–Sat · 7am – 6pm</strong></div></li>
-        </ul>
-      </div>
-
-      <form class="quote reveal" id="quote-form" novalidate>
-        <div class="form-body">
-          <h3>Request an Estimate</h3>
-          <div class="row">
-            <div class="field"><label for="name">Full name <span class="req">*</span></label><input id="name" name="name" autocomplete="name" required><span class="error">Please enter your name.</span></div>
-            <div class="field"><label for="phone">Phone <span class="req">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><span class="error">Please enter a valid phone number.</span></div>
-          </div>
-          <div class="row">
-            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><span class="error">Please enter a valid email.</span></div>
-            <div class="field"><label for="city">Project location</label><input id="city" name="city" autocomplete="address-level2" placeholder="Town / city"></div>
-          </div>
-          <fieldset>
-            <legend>Services needed <span class="req">*</span></legend>
-            <div class="chips">
-              <label class="chip"><input type="checkbox" name="services" value="Insulation"><span>Insulation</span></label>
-              <label class="chip"><input type="checkbox" name="services" value="Poly / vapour barrier"><span>Poly</span></label>
-              <label class="chip"><input type="checkbox" name="services" value="Drywall hanging"><span>Drywall</span></label>
-              <label class="chip"><input type="checkbox" name="services" value="Taping & finishing"><span>Taping</span></label>
-              <label class="chip"><input type="checkbox" name="services" value="Repairs"><span>Repairs</span></label>
-            </div>
-            <span class="error" id="services-error" style="margin-top:6px">Pick at least one service.</span>
-          </fieldset>
-          <div class="field">
-            <label for="type">Project type</label>
-            <select id="type" name="type">
-              <option>Basement development</option>
-              <option>New build</option>
-              <option>Renovation / addition</option>
-              <option>Garage / shop</option>
-              <option>Commercial</option>
-              <option>Repair / patch</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field"><label for="details">Project details</label><textarea id="details" name="details" placeholder="Approximate size, timeline, anything we should know…"></textarea></div>
-          <button type="submit" class="btn btn-primary">Send My Request <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <p class="form-note">Free &amp; no obligation. We never share your info.</p>
-        </div>
-        <div class="success" role="status" aria-live="polite">
-          <svg aria-hidden="true"><use href="#i-check"/></svg>
-          <h3 style="font-size:32px;color:var(--navy)">Thanks — request received!</h3>
-          <p id="success-msg">We'll be in touch shortly to set up your free estimate.</p>
-        </div>
-      </form>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="wrap">
       <h2>Ready for walls you'll be proud of?</h2>
-      <a href="#quote" class="btn">Get a Free Quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="contact.html" class="btn">Get a Free Quote <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </section>
 </main>
@@ -587,18 +195,18 @@
 <footer>
   <div class="wrap">
     <div>
-      <a href="#top" class="logo" aria-label="North Ridge Interiors Inc. home">
+      <a href="index.html" class="logo" aria-label="North Ridge Interiors Inc. home">
         <span class="logo-fallback"><svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="logo-text">North Ridge<small>Interiors Inc.</small></span></span>
       </a>
       <p style="margin-top:16px;max-width:340px">Drywall, insulation, poly and taping by hardworking professionals. 5-star rated.</p>
     </div>
     <div>
-      <h4>Services</h4>
-      <ul><li><a href="#services">Insulation</a></li><li><a href="#services">Poly / Vapour Barrier</a></li><li><a href="#services">Drywall Hanging</a></li><li><a href="#services">Taping &amp; Finishing</a></li></ul>
+      <h4>Company</h4>
+      <ul><li><a href="services.html">Services</a></li><li><a href="about.html">About Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Free Quote</a></li></ul>
     </div>
     <div>
       <h4>Contact</h4>
-      <ul><li><a href="tel:" data-phone-link data-phone>Phone</a></li><li><a href="mailto:" data-email-link data-email>Email</a></li><li><a href="#quote">Request a Quote</a></li></ul>
+      <ul><li><a href="tel:" data-phone-link data-phone>Phone</a></li><li><a href="mailto:" data-email-link data-email>Email</a></li><li><a href="contact.html">Request a Quote</a></li></ul>
     </div>
   </div>
   <div class="bottom"><div class="wrap"><span>© <span id="year"></span> North Ridge Interiors Inc. All rights reserved.</span><span>Drywall · Insulation · Poly · Taping</span></div></div>
@@ -606,135 +214,9 @@
 
 <div class="mobile-call">
   <a href="tel:" data-phone-link class="btn btn-ghost"><svg aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
-  <a href="#quote" class="btn btn-primary">Free Quote</a>
+  <a href="contact.html" class="btn btn-primary">Free Quote</a>
 </div>
 
-<script>
-/* ============================================================
-   BUSINESS DETAILS — edit these and the whole site updates.
-   ============================================================ */
-const BUSINESS = {
-  phone: "",            // e.g. "(306) 555-0123"
-  email: "",            // e.g. "info@northridgeinteriors.ca" — quote requests go here
-  area:  "",            // e.g. "Saskatoon & surrounding area"
-  hours: "",            // e.g. "Mon–Sat · 7am – 6pm"
-  // Optional: paste a Formspree (or similar) endpoint to receive quotes
-  // without the customer's email app, e.g. "https://formspree.io/f/xxxxxxx"
-  formEndpoint: ""
-};
-
-(function () {
-  const $ = (s, r = document) => r.querySelector(s);
-  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
-
-  // Fill business details
-  if (BUSINESS.phone) {
-    const tel = "tel:" + BUSINESS.phone.replace(/[^\d+]/g, "");
-    $$("[data-phone-link]").forEach(a => a.href = tel);
-    $$("[data-phone]").forEach(el => el.textContent = BUSINESS.phone);
-  } else {
-    $$("[data-phone-link]").forEach(a => { a.href = "#quote"; });
-  }
-  if (BUSINESS.email) {
-    $$("[data-email-link]").forEach(a => a.href = "mailto:" + BUSINESS.email);
-    $$("[data-email]").forEach(el => el.textContent = BUSINESS.email);
-  } else {
-    $$("[data-email-link]").forEach(a => { a.href = "#quote"; });
-  }
-  if (BUSINESS.area) $$("[data-area]").forEach(el => el.textContent = BUSINESS.area);
-  if (BUSINESS.hours) $$("[data-hours]").forEach(el => el.textContent = BUSINESS.hours);
-  $("#year").textContent = new Date().getFullYear();
-
-  // Mobile menu
-  const btn = $(".menu-btn"), list = $("#nav-list");
-  btn.addEventListener("click", () => {
-    const open = list.classList.toggle("open");
-    btn.setAttribute("aria-expanded", open);
-    btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
-  });
-  $$("#nav-list a").forEach(a => a.addEventListener("click", () => {
-    list.classList.remove("open"); btn.setAttribute("aria-expanded", "false");
-  }));
-
-  // Scroll reveal
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!reduce && "IntersectionObserver" in window) {
-    const io = new IntersectionObserver(entries => entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-    }), { threshold: 0.12 });
-    $$(".reveal").forEach(el => io.observe(el));
-  } else {
-    $$(".reveal").forEach(el => el.classList.add("in"));
-  }
-
-  // Quote form
-  const form = $("#quote-form");
-  const setInvalid = (input, bad) => input.closest(".field").classList.toggle("invalid", bad);
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const name = form.name.value.trim();
-    const phone = form.phone.value.trim();
-    const email = form.email.value.trim();
-    const services = $$('input[name="services"]:checked', form).map(i => i.value);
-
-    let ok = true;
-    const badName = name.length < 2;
-    const badPhone = phone.replace(/\D/g, "").length < 7;
-    const badEmail = email !== "" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    setInvalid(form.name, badName);
-    setInvalid(form.phone, badPhone);
-    setInvalid(form.email, badEmail);
-    $("#services-error").style.display = services.length ? "none" : "block";
-    if (badName || badPhone || badEmail || !services.length) ok = false;
-    if (!ok) {
-      const first = form.querySelector(".invalid input") || (!services.length && form.querySelector('input[name="services"]'));
-      if (first) first.focus();
-      return;
-    }
-
-    const data = {
-      name, phone, email,
-      location: form.city.value.trim(),
-      services: services.join(", "),
-      projectType: form.type.value,
-      details: form.details.value.trim()
-    };
-
-    const submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.disabled = true;
-
-    let sent = false;
-    if (BUSINESS.formEndpoint) {
-      try {
-        const res = await fetch(BUSINESS.formEndpoint, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify(data)
-        });
-        sent = res.ok;
-      } catch (_) { sent = false; }
-    }
-
-    if (!sent && BUSINESS.email) {
-      const body =
-        `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email || "-"}\n` +
-        `Location: ${data.location || "-"}\nServices: ${data.services}\n` +
-        `Project type: ${data.projectType}\n\nDetails:\n${data.details || "-"}`;
-      window.location.href = `mailto:${BUSINESS.email}?subject=${encodeURIComponent("Quote request — " + data.name)}&body=${encodeURIComponent(body)}`;
-      $("#success-msg").textContent = "Your email app should open with the details filled in — just hit send and we'll be in touch.";
-    } else if (!sent) {
-      console.warn("Northridge: set BUSINESS.email or BUSINESS.formEndpoint so quote requests are delivered.");
-    }
-
-    form.classList.add("sent");
-    submitBtn.disabled = false;
-  });
-
-  // Clear errors as user types
-  ["name", "phone", "email"].forEach(n => form[n].addEventListener("input", () => setInvalid(form[n], false)));
-  $$('input[name="services"]', form).forEach(i => i.addEventListener("change", () => $("#services-error").style.display = "none"));
-})();
-</script>
+<script src="site.js"></script>
 </body>
 </html>
