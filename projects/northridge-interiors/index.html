@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23111111'/%3E%3Cpath d='M7 24V8h4l8 10V8h4v16h-4L11 14v10z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Ccircle r='50' fill='%23111111'/%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='6'%3E%3Ccircle r='42'/%3E%3Cpath d='M-23 21V-18.5L23.5 19.5V-19'/%3E%3Cpath d='M-6.5 25.5V-25.5H2a6 6 0 0 1 6 6V-6'/%3E%3Cpath d='M-6.5 10.5H1L7.5 25.5'/%3E%3C/g%3E%3C/svg%3E">
 <style>
   :root {
     --navy: #111111;
@@ -74,11 +74,9 @@
   }
   header.nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; }
   .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-  .logo-mark { width: 40px; height: 40px; flex: none; }
+  .logo-mark { width: 46px; height: 46px; flex: none; }
   .logo-fallback { display: flex; align-items: center; gap: 12px; color: var(--navy); }
-  .logo-img { height: 48px; width: auto; max-width: 220px; object-fit: contain; }
-  footer .logo-fallback { color: var(--white); --logo-ink: #111; }
-  footer .logo-img { background: #fff; padding: 6px 10px; border-radius: 6px; }
+  footer .logo-fallback { color: var(--white); }
   .logo-text { font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; line-height: 1; color: var(--navy); }
   .logo-text small { display: block; font-size: 12px; letter-spacing: .22em; color: #6B6B6B; font-weight: 700; }
   nav ul { list-style: none; display: flex; gap: 28px; margin: 0; padding: 0; align-items: center; }
@@ -313,6 +311,7 @@
 <!-- SVG icon sprite (Lucide-style strokes) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
+    <symbol id="i-logo" viewBox="-50 -50 100 100"><g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="miter"><circle cx="0" cy="0" r="45"/><path d="M-23 21V-18.5L23.5 19.5V-19" stroke-linecap="square"/><path d="M-6.5 25.5V-25.5H2a6 6 0 0 1 6 6V-6"/><path d="M-6.5 10.5H1L7.5 25.5"/></g></symbol>
     <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.94 6.1 6.56.9-4.78 4.6 1.17 6.5L12 17.4l-5.89 3.2 1.17-6.5L2.5 9.5l6.56-.9z"/></symbol>
     <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
@@ -341,7 +340,7 @@
 <header class="nav">
   <div class="wrap">
     <a href="#top" class="logo" aria-label="North Ridge Interiors Inc. home">
-      <img class="logo-img" data-logo alt="North Ridge Interiors Inc." hidden><span class="logo-fallback"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="currentColor"/><path d="M5 29 14 16l5 6 7-12 9 19z" fill="var(--logo-ink, #fff)"/></svg><span class="logo-text">North Ridge<small>Interiors Inc.</small></span></span>
+      <span class="logo-fallback"><svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="logo-text">North Ridge<small>Interiors Inc.</small></span></span>
     </a>
     <nav aria-label="Main">
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-list">
@@ -589,7 +588,7 @@
   <div class="wrap">
     <div>
       <a href="#top" class="logo" aria-label="North Ridge Interiors Inc. home">
-        <img class="logo-img" data-logo alt="North Ridge Interiors Inc." hidden><span class="logo-fallback"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="currentColor"/><path d="M5 29 14 16l5 6 7-12 9 19z" fill="var(--logo-ink, #fff)"/></svg><span class="logo-text">North Ridge<small>Interiors Inc.</small></span></span>
+        <span class="logo-fallback"><svg class="logo-mark" aria-hidden="true"><use href="#i-logo"/></svg><span class="logo-text">North Ridge<small>Interiors Inc.</small></span></span>
       </a>
       <p style="margin-top:16px;max-width:340px">Drywall, insulation, poly and taping by hardworking professionals. 5-star rated.</p>
     </div>
@@ -615,7 +614,6 @@
    BUSINESS DETAILS — edit these and the whole site updates.
    ============================================================ */
 const BUSINESS = {
-  logo: "logo.png",     // your logo file, placed next to this page (PNG/SVG/JPG)
   phone: "",            // e.g. "(306) 555-0123"
   email: "",            // e.g. "info@northridgeinteriors.ca" — quote requests go here
   area:  "",            // e.g. "Saskatoon & surrounding area"
@@ -645,13 +643,6 @@ const BUSINESS = {
   }
   if (BUSINESS.area) $$("[data-area]").forEach(el => el.textContent = BUSINESS.area);
   if (BUSINESS.hours) $$("[data-hours]").forEach(el => el.textContent = BUSINESS.hours);
-  // Logo: show the real logo if the file loads, otherwise keep the text wordmark
-  if (BUSINESS.logo) {
-    $$("[data-logo]").forEach(img => {
-      img.onload = () => { img.hidden = false; const fb = img.nextElementSibling; if (fb) fb.style.display = "none"; };
-      img.src = BUSINESS.logo;
-    });
-  }
   $("#year").textContent = new Date().getFullYear();
 
   // Mobile menu
